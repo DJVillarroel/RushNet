@@ -1,0 +1,106 @@
+@import url('http://fonts.cdnfonts.com/css/paladins');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+:root{
+	--bg_color: #0d0d0d;
+	--header_color: rgb(62,49,49);
+	--header_color_grad: linear-gradient(0deg, rgba(62,49,49,1) 22%, rgba(135,5,5,1) 92%);
+	--nav_color: #545252;
+	--nav_selected: #343232;
+}
+
+
+html, body{
+	font-family: sans-serif;
+	font-style: normal;
+	color: white;
+	background-color: var(--bg_color);
+	margin: 0px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+.headerbar{
+	display: flex;
+	background-color: var(--header_color);
+	background: var(--header_color_grad);
+	width: 100vw;
+}
+
+.headerbar img{
+	width: 100px;
+	transition: 0.2s;
+	padding-left: 3em;
+}
+
+.headerbar img:hover{
+	width: 110px;
+	transition: 0.2s;
+}
+
+.headerbar h1{
+	font-family: 'Paladins Straight', sans-serif;
+	font-size: 18px;
+	padding-top: 1.6em;
+	color: gold;
+}
+
+.navbar_screen{
+	display: flex;
+	align-items: center;
+	background-color: var(--nav_color);
+	padding-left: 3em;
+	height: 2em;
+	transition: 0.3s;
+}
+
+.navbar_screen:hover{
+	height: 3.85em;
+	transition: 0.3s;
+}
+
+.navbar_screen-btn{
+	font-family: 'Cairo', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	transition: 0.3s;
+}
+
+.navbar_screen-btn:hover{
+	background-color: var(--nav_selected);
+	color: gold;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	transition: 0.3s;
+}
+
+.navbar_social{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 3em;
+}
+
+.navbar_social a{
+	background-color: #545252;
+	text-decoration: none;
+	color: white;
+	padding-right: 1em;
+	padding-left: 1em;
+	transition: 0.3s;
+}
+
+.navbar_social a:hover{
+	color: gold;
+	transition: 0.3s;
+}
